@@ -9,7 +9,7 @@ def range_to_list(sections: int):
     return ret_list
 
 if __name__ == "__main__":
-    sections = remove_escpape_char((read_file("msic/sections")))
+    sections = remove_escpape_char((read_file("misc/sections")))
     count = 0
     for sections in sections:
         sections = sections.split(',')

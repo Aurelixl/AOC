@@ -3,7 +3,7 @@ from helper import read_file, remove_escpape_char
 
 prio, alph = 0, "abcdefghijklmnopqrstuvwxyz"
 if __name__ == "__main__":
-    rucksack = remove_escpape_char((read_file("msic/rucksack")))
+    rucksack = remove_escpape_char((read_file("mmisc/rucksack")))
     for item in rucksack:
         item1 = item[0:len(item)//2]
         item2 = item[len(item)//2:]

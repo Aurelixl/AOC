@@ -10,7 +10,7 @@ def get_total_points(match: str, result, point: int=0):
     return point + result
 
 if __name__ == "__main__":
-    strat = remove_escpape_char((read_file("msic/strat")))
+    strat = remove_escpape_char((read_file("misc/strat")))
     for match in strat:
         # all wins
         if match[0] == 'C' and match[2] == 'X' or match[0] == 'B' and match[2] == 'Z' or match[0] == 'A' and match[2] == 'Y':

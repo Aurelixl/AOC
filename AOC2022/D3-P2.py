@@ -26,7 +26,7 @@ def find_batch(rucksack):
                     return char
 
 if __name__ == "__main__":
-    rucksack = remove_escpape_char((read_file("msic/rucksack")))
+    rucksack = remove_escpape_char((read_file("misc/rucksack")))
     while '' in rucksack:
         rucksack.remove("")
     prio = 0
