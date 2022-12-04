@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
 def get_calories_per_elve():
-    calories_per_elve = []
-    all_calories = []
+    calories_per_elve, all_calories = [], []
     elve = 0
 
-    f = open("elves","r")
+    f = open("msic/elves","r")
     lines = f.readlines() + ["\n"]
     for line in lines:
         if line != '\n':
@@ -17,11 +16,10 @@ def get_calories_per_elve():
                 cal = cal + i
             all_calories.append((elve,cal))
             calories_per_elve = []
-        
     return all_calories
 
 if __name__ == '__main__':
-    max3= 0
+    max3 = 0
     all_elves = get_calories_per_elve()
     for i in range(3):
         max = (0,0)

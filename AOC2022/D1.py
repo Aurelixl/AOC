@@ -5,7 +5,7 @@ def get_calories_per_elve():
     all_calories = []
     elve = 0
 
-    f = open("elves","r")
+    f = open("msic/elves","r")
     lines = f.readlines() + ["\n"]
     for line in lines:
         if line != '\n':
