@@ -3,7 +3,8 @@ from helper import read_file, remove_escpape_char
 
 if __name__ == "__main__":
     moves = remove_escpape_char((read_file("misc/crates")))
-    stacks = [['Z', 'N'],['M', 'C', 'D'],['P']]
+    stacks = [['Q','M','G','C','L'],['R','D','L','C','T','F','H','G'],['V','J','F','N','M','T','W','R'],['J','F','D','V','Q','P'],['N','F','M','S','L','B','T'],
+    ['R','N','V','H','C','D','P'],['H','C','T'],['G','S','J','V','Z','N','H','P'],['Z','F','H','G']]
     for move in moves:
         move = move.replace('move ','').replace(' from', '').replace('to ', '').split(' ')
         for i in range(int(move[0])):
